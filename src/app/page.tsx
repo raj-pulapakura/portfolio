@@ -32,7 +32,7 @@ export default function Home() {
       </ul>
       <h2>Projects</h2>
       {projects.map((project) => (
-        <ProjectItemSmall project={project} />
+        <ProjectItemSmall project={project} key={project.title} />
       ))}
       <h2>Articles</h2>
       {articles.map((article) => (

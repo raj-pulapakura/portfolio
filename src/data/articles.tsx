@@ -4,6 +4,7 @@ export class Article {
   articleURL: string;
   thumbnailURL: string;
   tags: string[];
+  firstPara: string;
 
   constructor({
     title,
@@ -11,18 +12,21 @@ export class Article {
     articleURL,
     thumbnailURL,
     tags,
+    firstPara,
   }: {
     title: string;
     subtitle: string;
     articleURL: string;
     thumbnailURL: string;
     tags: string[];
+    firstPara: string;
   }) {
     this.title = title;
     this.subtitle = subtitle;
     this.articleURL = articleURL;
     this.thumbnailURL = thumbnailURL;
     this.tags = tags;
+    this.firstPara = firstPara;
   }
 }
 
@@ -36,6 +40,8 @@ export default [
     thumbnailURL:
       "https://miro.medium.com/v2/resize:fit:786/format:webp/0*nijwsf72B5uq2tm5",
     tags: ["Machine Learning", "Maths", "Beginner"],
+    firstPara:
+      "I used to think that you didn’t need maths to get into machine learning. For a highschool student who was fascinated by ML, learning more maths was the least of my concerns.",
   }),
   new Article({
     title: "Beginner's Guide to the Maths behind Machine Learning",
@@ -46,5 +52,7 @@ export default [
     thumbnailURL:
       "https://miro.medium.com/v2/resize:fit:786/format:webp/0*nijwsf72B5uq2tm5",
     tags: ["Machine Learning", "Maths", "Beginner"],
+    firstPara:
+      "I used to think that you didn’t need maths to get into machine learning. For a highschool student who was fascinated by ML, learning more maths was the least of my concerns.",
   }),
 ];
