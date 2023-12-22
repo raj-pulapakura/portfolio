@@ -16,5 +16,11 @@ export default function DarkModeToggle() {
     setIsDark(!isDark);
   }
 
-  return <FontAwesomeIcon onClick={toggle} icon={isDark ? faSun : faMoon} />;
+  return (
+    <FontAwesomeIcon
+      className="hover:cursor-pointer"
+      onClick={toggle}
+      icon={isDark ? faSun : faMoon}
+    />
+  );
 }

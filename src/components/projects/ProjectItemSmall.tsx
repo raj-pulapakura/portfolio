@@ -1,17 +1,51 @@
 import { Project } from "@/data/projects";
+import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import ProjectLink from "./ProjectLink";
 
-export default function ProjectItemSmall({ project }: { project: Project }) {
+export default function ProjectItemSmall({
+  project,
+  className,
+}: {
+  project: Project;
+  className?: string;
+}) {
   return (
-    <section>
+    <section
+      className={`items-center shadow-boxlight dark:shadow-boxdark rounded-lg px-10 py-10  ${className}`}
+    >
       <Image
+        className="w-full h-auto rounded-md mb-5"
         src={project.thumbnailURL}
         alt={`${project.title} thumbnail`}
-        width="100"
-        height="50"
+        width="1000"
+        height="1000"
       />
-      <h1>{project.title}</h1>
-      <p>{project.description}</p>
+      <div className="w-full mb-5">
+        <h1 className="text-xl font-bold mb-1">{project.title}</h1>
+        <p className="text-md">{project.description}</p>
+      </div>
+
+      <div className="flex gap-5">
+        {project.githubURL && (
+          <ProjectLink
+            className="fa-xl"
+            icon={faGithub}
+            link={project.githubURL}
+          />
+        )}
+        {project.webURL && (
+          <ProjectLink className="fa-xl" icon={faLink} link={project.webURL} />
+        )}
+        {project.videoURL && (
+          <ProjectLink
+            className="fa-xl"
+            icon={faYoutube}
+            link={project.videoURL}
+          />
+        )}
+      </div>
     </section>
   );
 }

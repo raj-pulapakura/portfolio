@@ -12,6 +12,11 @@ const nextConfig = {
         hostname: "miro.medium.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "github.com",
+        pathname: "/**",
+      },
     ],
   },
 };

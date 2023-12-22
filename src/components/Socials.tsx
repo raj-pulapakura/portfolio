@@ -7,9 +7,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
-export default function Socials() {
+export default function Socials({ className }: { className?: string }) {
   return (
-    <section>
+    <section className={`flex flex-row gap-10 ${className}`}>
       <SocialsIcon icon={faGithub} link={"https://github.com/raj-pulapakura"} />
       <SocialsIcon
         icon={faLinkedin}
@@ -25,8 +25,8 @@ export default function Socials() {
 
 function SocialsIcon({ icon, link }: { icon: IconDefinition; link: string }) {
   return (
-    <Link href={link}>
-      <FontAwesomeIcon icon={icon} width="30" height="30" />
+    <Link className="hover:text-light hover:dark:text-dark" href={link}>
+      <FontAwesomeIcon className="fa-2xl" icon={icon} />
     </Link>
   );
 }

@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Nav from "@/components/Nav";
-import DarkModeToggle from "@/components/DarkModeToggle";
+import Nav from "@/components/layout/Nav";
+import DarkModeToggle from "@/components/layout/DarkModeToggle";
+import FixedTop from "@/components/layout/FixedTop";
+import ContentBox from "@/components/layout/ContentBox";
+import Footer from "@/components/layout/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,11 +22,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${inter.className} bg-white dark:bg-black text-black dark:text-white`}
+        className={`${inter.className} bg-bgLight dark:bg-bgDark text-black dark:text-white`}
       >
-        <Nav />
-        <DarkModeToggle />
-        {children}
+        <FixedTop className="flex items-center gap-10">
+          <Nav />
+          <DarkModeToggle />
+        </FixedTop>
+
+        <ContentBox>{children}</ContentBox>
       </body>
     </html>
   );

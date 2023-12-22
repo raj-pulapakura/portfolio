@@ -5,6 +5,7 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
+import ProjectLink from "./ProjectLink";
 
 export default function ProjectItemLarge({ project }: { project: Project }) {
   return (
@@ -35,22 +36,5 @@ export default function ProjectItemLarge({ project }: { project: Project }) {
         />
       )}
     </section>
-  );
-}
-
-function ProjectLink({
-  icon,
-  link,
-  text,
-}: {
-  icon: IconDefinition;
-  link: string;
-  text: string;
-}) {
-  return (
-    <Link href={link}>
-      <FontAwesomeIcon icon={icon} width="25" height="25" />
-      <p>{text}</p>
-    </Link>
   );
 }

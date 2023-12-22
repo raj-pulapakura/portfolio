@@ -1,4 +1,4 @@
-import Footer from "@/components/Footer";
+import Footer from "@/components/layout/Footer";
 import Socials from "@/components/Socials";
 import ArticleItemsSmall from "@/components/articles/ArticleItemSmall";
 import ProjectItemSmall from "@/components/projects/ProjectItemSmall";
@@ -6,39 +6,68 @@ import articles from "@/data/articles";
 import projects from "@/data/projects";
 import skills from "@/data/skills";
 import Image from "next/image";
+import Chip from "@/components/Chip";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBook, faFile } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
     <main>
-      <Image src="/head.png" alt="Me" width="200" height="200" />
-      <h1>
-        Full-stack web and mobile developer, and Machine learning engineer.
-      </h1>
-      <p>
-        I am a software developer with expertise in full stack web-development,
-        cross-platform app development, and machine learning. I love building
-        beautiful and elegant interfaces, and combining them with the power and
-        functionality of machine learning. I have diverse software engineering
-        domain knowledge, having experience with many aspects of software
-        development. I have used a wide array of technologies including
-        web-based, app-based, APIs, CI/CD and cloud-based tech.
+      <section className="flex flex-col-reverse lg:items-center lg:flex-row gap-10 justify-between mb-20">
+        <div className="lg:w-1/2 ">
+          <h1 className="text-5xl md:text-6xl font-black mb-10">
+            Full-stack web and mobile developer, and Machine learning engineer.
+          </h1>
+
+          <Socials />
+        </div>
+        <div className="lg:w-1/2">
+          <Image
+            className="rounded-lg lg:text-right lg:ml-auto"
+            src="/head.png"
+            alt="Me"
+            width="400"
+            height="400"
+          />
+        </div>
+      </section>
+
+      <p className="mb-10">
+        👋 Hi, I'm Raj. I'm a software developer with expertise in full stack
+        web-development, cross-platform app development, and machine learning. I
+        love building beautiful and elegant interfaces, and combining them with
+        the power and functionality of machine learning!
       </p>
-      <Socials />
-      <h2>Skills</h2>
-      <ul>
+
+      <section className="mb-20">
         {skills.map((skill) => (
-          <li>{skill}</li>
+          <Chip>
+            <p className="text-md">{skill}</p>
+          </Chip>
         ))}
-      </ul>
-      <h2>Projects</h2>
-      {projects.map((project) => (
-        <ProjectItemSmall project={project} key={project.title} />
-      ))}
-      <h2>Articles</h2>
-      {articles.map((article) => (
-        <ArticleItemsSmall article={article} />
-      ))}
-      <Footer />
+      </section>
+
+      <h1 className="text-5xl font-black z-10 mb-10">
+        <FontAwesomeIcon icon={faFile} /> Creations
+      </h1>
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-20">
+        {projects.map((project) => (
+          <ProjectItemSmall
+            className=""
+            project={project}
+            key={project.title}
+          />
+        ))}
+      </section>
+
+      <h1 className="text-5xl font-black z-10 mb-10">
+        <FontAwesomeIcon icon={faBook} /> Articles
+      </h1>
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        {articles.map((article) => (
+          <ArticleItemsSmall article={article} />
+        ))}
+      </section>
     </main>
   );
 }
