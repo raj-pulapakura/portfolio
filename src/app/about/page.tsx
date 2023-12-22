@@ -1,63 +1,153 @@
 import Socials from "@/components/Socials";
+import TimelineBar from "@/components/about/TimelineBar";
+import TimelineMilestone from "@/components/about/TimelineMilestone";
+import { faAward, faFile } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
 export default function AboutPage() {
   return (
     <main>
-      <Image src="/biking.jpg" alt="Me biking" width="300" height="500" />
-      <h1>
-        I'm Raj Pulapakura. I live in Melbourne (Australia), where I'm building
-        the future.
+      <h1 className="text-6xl mb-5">👋👋👋</h1>
+      <h1 className="text-6xl font-black mb-3">Hi, I'm Raj.</h1>
+      <h2 className="text-3xl font-black mb-10">
+        I live in Melbourne, Australia.
+      </h2>
+      <Image
+        className="w-full rounded-lg mb-20"
+        src="/biking.jpg"
+        alt="Me biking"
+        width="400"
+        height="400"
+      />
+
+      <h1 className="text-6xl font-black">
+        🛣️ My dev journey started in the beginning of 2021...
       </h1>
-      <p>For the past 3 years I have been honing my software skills.</p>
-      <h2>My Journey</h2>
-      <h3>Jan 2021</h3>
-      <p>Learned Python and programming fundamentals</p>
-      <h3>Jun 2021</h3>
-      <p>
-        Learned Kotlin and built my first app <em>Number Predictor</em>
-      </p>
-      <h3>Sep 2021</h3>
-      <p>
-        Discovered and mastered web development. Learned HTML, CSS, JavaScript,
-        TypeScript and React.
-      </p>
-      <h3>Mar 2022</h3>
-      <p>Learned how to build cross-platform apps with Flutter.</p>
-      <p>
-        Rebuilt <em>Number Predictor</em> with Flutter.
-      </p>
-      <h3>Jun 2022</h3>
-      <p>Discovered Machine Learning</p>
-      <p>
-        Learned my first ML algorithms such as Linear Regression, KNN, Decision
-        Trees and SVMs.
-      </p>
-      <h3>Jun 2023</h3>
-      <p>Dived into Deep Learning</p>
-      <p>Learned about Computer Vision, OpenCV and advanced TensorFlow </p>
-      <h3>Jul 2023</h3>
-      <p>Mastered Differential Calculus</p>
-      <h3>Aug 2023</h3>
-      <p>Took the TensorFlow Developer Certificate Exam and passed!</p>
-      <p>Jun 2023 to Dec 2023</p>
-      <p>Received the following certificates:</p>
-      <ul>
-        <li>IBM Machine Learning Professional Certificate</li>
-        <li>Advanced Machine Learning on Google Cloud</li>
-        <li>Deep Learning Specialization</li>
-        <li>Databases and SQL for Data Science with Python</li>
-      </ul>
-      <h3>
-        Throughout 2023, I combined all my knowledge (Python, web development,
-        ML) to produce the following projects:
-      </h3>
-      <ul>
-        <li>Real-time Gesture Detection Dino Game</li>
-        <li>Image Search Engine</li>
-        <li>Comment Toxicity Classifier</li>
-      </ul>
-      <h2>Things I love:</h2>
+
+      <TimelineBar />
+
+      <TimelineMilestone
+        text="Jan 2021"
+        description="Learned Python and programming fundamentals."
+      />
+
+      <TimelineBar />
+
+      <TimelineMilestone
+        text="Jun 2021"
+        description={
+          <p>
+            Learned Kotlin and built my first app <em>Number Predictor</em>.
+          </p>
+        }
+      />
+
+      <TimelineBar />
+
+      <TimelineMilestone
+        text="Sep 2021"
+        description="Discovered and mastered web development. Learned HTML, CSS, JavaScript,
+        TypeScript and React."
+      />
+
+      <TimelineBar />
+
+      <TimelineMilestone
+        text="Mar 2022"
+        description="Learned how to build cross-platform apps with Flutter."
+      />
+
+      <TimelineBar
+        miniMilestones={[
+          <p>
+            Rebuilt <em>Number Predictor</em> with Flutter.
+          </p>,
+        ]}
+      />
+
+      <TimelineMilestone
+        text="Jun 2022"
+        description="Discovered Machine Learning"
+      />
+
+      <TimelineBar
+        miniMilestones={[
+          <p>Learned my first ML algorithms.</p>,
+          <p>Learned Linear Algebra, Probablity, and Statistics.</p>,
+          <p>Learned TensorFlow and PyTorch</p>,
+        ]}
+      />
+
+      <TimelineMilestone
+        text="Jan 2023"
+        description="Dived into Deep Learning and Computer Vision"
+      />
+
+      <TimelineBar
+        miniMilestones={[
+          <p>
+            <FontAwesomeIcon icon={faFile} /> Real-time Gesture Detection Dino
+            Game
+          </p>,
+          <p>
+            <FontAwesomeIcon icon={faFile} /> Image Search Engine
+          </p>,
+        ]}
+      />
+
+      <TimelineMilestone
+        text="Jul 2023"
+        description="Mastered Calculus for ML"
+      />
+
+      <TimelineBar
+        miniMilestones={[
+          <p>Mastered Differential Calculus</p>,
+          <p>Learned about Partial Derivatives</p>,
+          <p>Finally understood the Back Propagation algorithm</p>,
+          <p>Implemented a neural network from scratch!</p>,
+        ]}
+      />
+
+      <TimelineMilestone text="Aug 2023" description="More Deep Learning " />
+
+      <TimelineBar
+        miniMilestones={[
+          <p>Took the TensorFlow Developer Certificate Exam and passed!</p>,
+          <p>
+            <FontAwesomeIcon icon={faFile} /> Comment Toxicity Classifier
+          </p>,
+        ]}
+      />
+
+      <TimelineMilestone text="Sep 2023" description="Upskilling" />
+
+      <TimelineBar
+        barHeight={96}
+        miniMilestones={[
+          <p>
+            <FontAwesomeIcon icon={faAward} /> IBM Machine Learning Professional
+            Certificate
+          </p>,
+          <p>
+            <FontAwesomeIcon icon={faAward} /> Advanced Machine Learning on
+            Google Cloud Certificate
+          </p>,
+          <p>
+            <FontAwesomeIcon icon={faAward} /> Deep Learning Specialization
+            Certificate
+          </p>,
+          <p>
+            <FontAwesomeIcon icon={faAward} /> Databases and SQL for Data
+            Science with Python
+          </p>,
+        ]}
+      />
+
+      <TimelineMilestone text="Dec 2023" description="" />
+
+      {/* <h2>Things I love:</h2>
       <ul>
         <li>Coding</li>
         <li>Basketball</li>
@@ -65,8 +155,7 @@ export default function AboutPage() {
         <li>Chess</li>
         <li>Going to the movies</li>
         <li>Reading technical/self-improvement books</li>
-      </ul>
-      <Socials />
+      </ul> */}
     </main>
   );
 }

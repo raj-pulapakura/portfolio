@@ -31,6 +31,9 @@ const config: Config = {
         boxlight: "0px 0px 30px 1px rgb(0, 0, 0, 0.08)",
         boxdark: "0px 0px 30px 1px rgb(255, 255, 255, 0.08)",
       },
+      borderRadius: {
+        timeline: "50%/100px 100px",
+      },
     },
   },
   plugins: [],
