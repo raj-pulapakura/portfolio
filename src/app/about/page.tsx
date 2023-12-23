@@ -1,7 +1,16 @@
 import Socials from "@/components/Socials";
 import TimelineBar from "@/components/about/TimelineBar";
 import TimelineMilestone from "@/components/about/TimelineMilestone";
-import { faAward, faFile } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAppStore,
+  faCss3,
+  faDocker,
+  faGooglePlay,
+  faHtml5,
+  faJs,
+  faPython,
+} from "@fortawesome/free-brands-svg-icons";
+import { faAward, faCode, faFile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
@@ -30,6 +39,10 @@ export default function AboutPage() {
       <TimelineMilestone
         text="Jan 2021"
         description="Learned Python and programming fundamentals."
+        icons={[
+          <FontAwesomeIcon icon={faPython} size="2x" />,
+          <FontAwesomeIcon icon={faCode} size="2x" />,
+        ]}
       />
 
       <TimelineBar />
@@ -41,6 +54,10 @@ export default function AboutPage() {
             Learned Kotlin and built my first app <em>Number Predictor</em>.
           </p>
         }
+        icons={[
+          <FontAwesomeIcon icon={faGooglePlay} size="2x" />,
+          <FontAwesomeIcon icon={faAppStore} size="2x" />,
+        ]}
       />
 
       <TimelineBar />
@@ -49,6 +66,12 @@ export default function AboutPage() {
         text="Sep 2021"
         description="Discovered and mastered web development. Learned HTML, CSS, JavaScript,
         TypeScript and React."
+        icons={[
+          <FontAwesomeIcon icon={faHtml5} size="2x" />,
+          <FontAwesomeIcon icon={faCss3} size="2x" />,
+          <FontAwesomeIcon icon={faJs} size="2x" />,
+          <FontAwesomeIcon icon={faDocker} size="2x" />,
+        ]}
       />
 
       <TimelineBar />
@@ -56,35 +79,38 @@ export default function AboutPage() {
       <TimelineMilestone
         text="Mar 2022"
         description="Learned how to build cross-platform apps with Flutter."
-      />
-
-      <TimelineBar
         miniMilestones={[
           <p>
             Rebuilt <em>Number Predictor</em> with Flutter.
           </p>,
         ]}
+        icons={[
+          <FontAwesomeIcon icon={faGooglePlay} size="2x" />,
+          <FontAwesomeIcon icon={faAppStore} size="2x" />,
+        ]}
       />
+
+      <TimelineBar />
 
       <TimelineMilestone
         text="Jun 2022"
         description="Discovered Machine Learning"
-      />
-
-      <TimelineBar
         miniMilestones={[
           <p>Learned my first ML algorithms.</p>,
           <p>Learned Linear Algebra, Probablity, and Statistics.</p>,
           <p>Learned TensorFlow and PyTorch</p>,
         ]}
+        icons={[
+          <FontAwesomeIcon icon={faGooglePlay} size="2x" />,
+          <FontAwesomeIcon icon={faAppStore} size="2x" />,
+        ]}
       />
+
+      <TimelineBar />
 
       <TimelineMilestone
         text="Jan 2023"
         description="Dived into Deep Learning and Computer Vision"
-      />
-
-      <TimelineBar
         miniMilestones={[
           <p>
             <FontAwesomeIcon icon={faFile} /> Real-time Gesture Detection Dino
@@ -96,12 +122,11 @@ export default function AboutPage() {
         ]}
       />
 
+      <TimelineBar />
+
       <TimelineMilestone
         text="Jul 2023"
         description="Mastered Calculus for ML"
-      />
-
-      <TimelineBar
         miniMilestones={[
           <p>Mastered Differential Calculus</p>,
           <p>Learned about Partial Derivatives</p>,
@@ -110,9 +135,11 @@ export default function AboutPage() {
         ]}
       />
 
-      <TimelineMilestone text="Aug 2023" description="More Deep Learning " />
+      <TimelineBar />
 
-      <TimelineBar
+      <TimelineMilestone
+        text="Aug 2023"
+        description="More Deep Learning "
         miniMilestones={[
           <p>Took the TensorFlow Developer Certificate Exam and passed!</p>,
           <p>
@@ -121,10 +148,11 @@ export default function AboutPage() {
         ]}
       />
 
-      <TimelineMilestone text="Sep 2023" description="Upskilling" />
+      <TimelineBar />
 
-      <TimelineBar
-        barHeight={96}
+      <TimelineMilestone
+        text="Sep 2023"
+        description="Upskilling"
         miniMilestones={[
           <p>
             <FontAwesomeIcon icon={faAward} /> IBM Machine Learning Professional
@@ -144,6 +172,8 @@ export default function AboutPage() {
           </p>,
         ]}
       />
+
+      <TimelineBar />
 
       <TimelineMilestone text="Dec 2023" description="" />
 

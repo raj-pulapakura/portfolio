@@ -5,7 +5,10 @@ import Nav from "@/components/layout/Nav";
 import DarkModeToggle from "@/components/layout/DarkModeToggle";
 import FixedTop from "@/components/layout/FixedTop";
 import ContentBox from "@/components/layout/ContentBox";
-import Footer from "@/components/layout/Footer";
+
+import { config, dom } from "@fortawesome/fontawesome-svg-core";
+import Head from "next/head";
+config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +27,12 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-bgLight dark:bg-bgDark text-black dark:text-white`}
       >
+        {/* font awesome icons are loading large because font awesome css is not loading
+        this block adds font awesome css */}
+        <Head>
+          <style>{dom.css()}</style>
+        </Head>
+
         <FixedTop className="flex items-center gap-10">
           <Nav />
           <DarkModeToggle />
