@@ -5,6 +5,7 @@ export class Article {
   thumbnailURL: string;
   tags: string[];
   firstPara: string;
+  datePublished: string;
 
   constructor({
     title,
@@ -13,6 +14,7 @@ export class Article {
     thumbnailURL,
     tags,
     firstPara,
+    datePublished,
   }: {
     title: string;
     subtitle: string;
@@ -20,6 +22,7 @@ export class Article {
     thumbnailURL: string;
     tags: string[];
     firstPara: string;
+    datePublished: string;
   }) {
     this.title = title;
     this.subtitle = subtitle;
@@ -27,6 +30,7 @@ export class Article {
     this.thumbnailURL = thumbnailURL;
     this.tags = tags;
     this.firstPara = firstPara;
+    this.datePublished = datePublished;
   }
 }
 
@@ -42,6 +46,7 @@ export default [
     tags: ["Machine Learning", "Maths", "Beginner"],
     firstPara:
       "I used to think that you didn’t need maths to get into machine learning. For a highschool student who was fascinated by ML, learning more maths was the least of my concerns.",
+    datePublished: "Dec 15 2023",
   }),
   new Article({
     title: "Beginner's Guide to the Maths behind Machine Learning",
@@ -54,5 +59,6 @@ export default [
     tags: ["Machine Learning", "Maths", "Beginner"],
     firstPara:
       "I used to think that you didn’t need maths to get into machine learning. For a highschool student who was fascinated by ML, learning more maths was the least of my concerns.",
+    datePublished: "Dec 15 2023",
   }),
 ];
