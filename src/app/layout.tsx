@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Nav from "@/components/layout/Nav";
+import Nav from "@/components/layout/Nav/Nav";
 import DarkModeToggle from "@/components/layout/DarkModeToggle";
 import FixedTop from "@/components/layout/FixedTop";
 import ContentBox from "@/components/layout/ContentBox";
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${inter.className} relative bg-bgLight dark:bg-bgDark text-black dark:text-white`}
+        className={`${inter.className} bg-bgLight dark:bg-bgDark text-black dark:text-white`}
       >
         {/* font awesome icons are loading large because font awesome css is not loading
         this block adds font awesome css */}
@@ -36,7 +36,6 @@ export default function RootLayout({
 
         <FixedTop className="flex items-center gap-10">
           <Nav />
-          <DarkModeToggle />
         </FixedTop>
 
         <ContentBox>{children}</ContentBox>

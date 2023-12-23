@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 
-export default function DarkModeToggle() {
+export default function DarkModeToggle({ className }: { className?: string }) {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ export default function DarkModeToggle() {
 
   return (
     <FontAwesomeIcon
-      className="hover:cursor-pointer"
+      className={`hover:cursor-pointer ${className}`}
       onClick={toggle}
       icon={isDark ? faSun : faMoon}
     />
