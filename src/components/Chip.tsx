@@ -1,8 +1,27 @@
 import { ReactNode } from "react";
 
-export default function Chip({ children }: { children: ReactNode }) {
-  return (
-    <div className=" text-white dark:text-black bg-light dark:bg-dark py-1 px-3 rounded-full w-fit inline-block m-1 font-semibold">
+export default function Chip({
+  children,
+  secondary,
+  className,
+}: {
+  children: ReactNode;
+  secondary?: boolean;
+  className?: string;
+}) {
+  const commonClasses =
+    "py-1 px-3 rounded-full w-fit inline-block mr-2 mb-2 font-semibold";
+
+  return secondary ? (
+    <div
+      className={`text-black bg-gray-200 dark:text-white  dark:bg-gray-900 ${commonClasses}  ${className}`}
+    >
+      {children}
+    </div>
+  ) : (
+    <div
+      className={`text-white bg-light dark:text-black  dark:bg-dark ${commonClasses} ${className}`}
+    >
       {children}
     </div>
   );

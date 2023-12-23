@@ -1,4 +1,3 @@
-import Socials from "@/components/Socials";
 import TimelineBar from "@/components/about/TimelineBar";
 import TimelineMilestone from "@/components/about/TimelineMilestone";
 import {
@@ -13,6 +12,8 @@ import {
 import { faAward, faCode, faFile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+
+// TODO: use better icons and get coloured icons from web and put in public and use
 
 export default function AboutPage() {
   return (
@@ -30,8 +31,8 @@ export default function AboutPage() {
         height="400"
       />
 
-      <h1 className="text-6xl font-black">
-        🛣️ My dev journey started in the beginning of 2021...
+      <h1 className="text-6xl font-black text-center">
+        My dev journey started in the beginning of 2021...
       </h1>
 
       <TimelineBar />
