@@ -9,7 +9,7 @@ export default function ProjectsPage() {
     <main>
       <h1 className="text-4xl font-black mb-10 text-center">
         I express my love for software development through the{" "}
-        <span className="text-dark"> projects</span> I build.
+        <span className="text-light dark:text-dark"> projects</span> I build.
       </h1>
       <h2 className="text-lg font-bold mb-10 text-center">
         <Link href="https://github.com/raj-pulapakura">

@@ -1,5 +1,6 @@
 "use client";
 
+import Email from "@/components/Email";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useDownloader from "react-use-downloader";
@@ -19,11 +20,8 @@ export default function ResumePage() {
       <p className="mb-10 text-left">
         I would love to chat about potential roles as a Software Engineer, Full
         Stack Developer, or Machine Learning Engineer. Kindly download my resume
-        using the button below, and email me at{" "}
-        <span className="bg-gray-700 p-1 font-mono rounded-lg">
-          raj.pulapakura@gmail.com
-        </span>{" "}
-        to discuss further any opportunities.
+        using the button below, and email me at <Email /> to discuss further any
+        opportunities.
       </p>
       <button
         className="hover:bg-gray-100 active:bg-gray-400 text-lg text-white dark:text-black bg-light dark:bg-dark font-bold  px-5 py-3 rounded-lg mb-20 "

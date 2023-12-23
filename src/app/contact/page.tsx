@@ -1,3 +1,4 @@
+import Email from "@/components/Email";
 import Socials from "@/components/Socials";
 import {
   faGithub,
@@ -15,12 +16,8 @@ export default function ContactPage() {
         I would love to get in touch
       </h1>
       <p className="leading-relaxed mb-5">
-        Contacting me is easy, just drop me an email at{" "}
-        <span className="bg-gray-700 p-1 font-mono rounded-lg">
-          raj.pulapakura@gmail.com
-        </span>
-        . I welcome the opportunity to discuss potential job opportunities and
-        project ideas.
+        Contacting me is easy, just drop me an email at <Email />. I welcome the
+        opportunity to discuss potential job opportunities and project ideas.
       </p>
       <p className="leading-relaxed mb-10">
         If you're a technical recruiter, kindly{" "}
