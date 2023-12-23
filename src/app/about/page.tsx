@@ -19,18 +19,22 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <main>
-      <h1 className="text-6xl mb-5">👋👋👋</h1>
-      <h1 className="text-6xl font-black mb-3">Hi, I'm Raj.</h1>
-      <h2 className="text-3xl font-black mb-10">
-        I live in Melbourne, Australia.
-      </h2>
-      <Image
-        className="w-full rounded-lg mb-20"
-        src="/biking.jpg"
-        alt="Me biking"
-        width="400"
-        height="400"
-      />
+      <section className=" flex flex-col lg:flex-row lg:items-center lg:justify-evenly gap-10 mb-20 lg:mb-36 w-fit">
+        <div className=" ">
+          <h1 className="text-6xl mb-5">👋👋👋</h1>
+          <h1 className="text-6xl font-black mb-3">Hi, I'm Raj.</h1>
+          <h2 className="text-3xl font-black">
+            I live in Melbourne, Australia.
+          </h2>
+        </div>
+        <Image
+          className="bg-blue-100 w-full lg:w-1/3 h-fit rounded-lg "
+          src="/biking.jpg"
+          alt="Me biking"
+          width="400"
+          height="400"
+        />
+      </section>
 
       <h1 className="text-6xl font-black text-center">
         My dev journey started in the beginning of 2021...
