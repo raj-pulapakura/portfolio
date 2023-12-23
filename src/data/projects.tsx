@@ -46,7 +46,7 @@ export default [
       "https://github.com/raj-pulapakura/Image-Search-Engine/assets/87762282/21702ad9-6cfe-4a5d-8385-cc65fad8eded",
     githubURL: "https://github.com/raj-pulapakura/Image-Search-Engine/",
     videoURL: "https://www.youtube.com/watch?v=loBZkPvn29c",
-    webURL: "image-search-pro.vercel.app",
+    webURL: "https://image-search-pro.vercel.app",
     tags: [
       "aws",
       "machine-learning",
