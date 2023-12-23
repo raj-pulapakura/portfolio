@@ -14,6 +14,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
 // TODO: use better icons and get coloured icons from web and put in public and use
+// TODO: make picture smaller on full screen
 
 export default function AboutPage() {
   return (

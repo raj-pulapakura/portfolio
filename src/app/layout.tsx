@@ -8,6 +8,7 @@ import ContentBox from "@/components/layout/ContentBox";
 
 import { config, dom } from "@fortawesome/fontawesome-svg-core";
 import Head from "next/head";
+import Footer from "@/components/layout/Footer";
 config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
@@ -25,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${inter.className} bg-bgLight dark:bg-bgDark text-black dark:text-white`}
+        className={`${inter.className} relative bg-bgLight dark:bg-bgDark text-black dark:text-white`}
       >
         {/* font awesome icons are loading large because font awesome css is not loading
         this block adds font awesome css */}
