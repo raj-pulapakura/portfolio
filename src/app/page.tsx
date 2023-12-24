@@ -1,14 +1,15 @@
-import Footer from "@/components/layout/Footer";
+"use client";
+
 import Socials from "@/components/Socials";
 import ArticleItemsSmall from "@/components/articles/ArticleItemSmall";
 import ProjectItemSmall from "@/components/projects/ProjectItemSmall";
 import articles from "@/data/articles";
 import projects from "@/data/projects";
 import skills from "@/data/skills";
-import Image from "next/image";
 import Chip from "@/components/Chip";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook, faFile } from "@fortawesome/free-solid-svg-icons";
+import Headshot from "@/components/home/Headshot";
 
 export default function Home() {
   return (
@@ -18,18 +19,9 @@ export default function Home() {
           <h1 className="text-5xl md:text-6xl font-black mb-10">
             Full-stack web and mobile developer, and Machine learning engineer.
           </h1>
-
           <Socials />
         </div>
-        <div className="lg:w-1/2">
-          <Image
-            className="rounded-lg lg:text-right lg:ml-auto"
-            src="pfps/head.png"
-            alt="Me"
-            width="400"
-            height="400"
-          />
-        </div>
+        <Headshot />
       </section>
 
       <p className="mb-10">

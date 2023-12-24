@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { MutableRefObject, useEffect, useRef, useState } from "react";
 import DarkModeToggle from "../DarkModeToggle";
 import NavLink from "./NavLink";
+import Link from "next/link";
 
 export default function MobileNavBar({ className }: { className?: string }) {
   const [isMenuShowing, setMenuShowing] = useState(false);
@@ -32,7 +33,9 @@ export default function MobileNavBar({ className }: { className?: string }) {
           isMenuShowing ? "rounded-t-3xl" : "rounded-full"
         } gap-7 justify-center shadow-navlight dark:shadow-navdark py-3 px-7 bg-white dark:bg-black items-center`}
       >
-        <p className="text-nowrap z-10">Raj Pulapakura</p>
+        <Link href="/" className="hover:cursor-pointer">
+          <p className="text-nowrap z-10">Raj Pulapakura</p>
+        </Link>
         <FontAwesomeIcon
           className="z-10 hover:cursor-pointer"
           onClick={() => setMenuShowing(!isMenuShowing)}

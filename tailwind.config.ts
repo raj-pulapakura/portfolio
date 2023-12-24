@@ -35,6 +35,20 @@ const config: Config = {
       borderRadius: {
         timeline: "50%/100px 100px",
       },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "translateY(-5px)" },
+          "50%": { transform: "translateY(0px)" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "100" },
+        },
+      },
+      animation: {
+        wiggle: "wiggle 1s ease-in-out infinite",
+        fadeIn: "fadeIn 1s ease-in-out",
+      },
     },
   },
   plugins: [],

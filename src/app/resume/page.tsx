@@ -15,7 +15,7 @@ export default function ResumePage() {
   return (
     <main className="">
       <h1 className="text-4xl font-black mb-10 text-left">
-        Want know how I can add value to your company?
+        Want to know how I can add value to your company?
       </h1>
       <p className="mb-10 text-left">
         I would love to chat about potential roles as a Software Engineer, Full
