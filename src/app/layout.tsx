@@ -34,7 +34,7 @@ export default function RootLayout({
           <style>{dom.css()}</style>
         </Head>
 
-        <FixedTop className="flex items-center gap-10">
+        <FixedTop>
           <Nav />
         </FixedTop>
 

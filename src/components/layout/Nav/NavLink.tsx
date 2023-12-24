@@ -5,14 +5,16 @@ export default function NavLink({
   currentPathName,
   text,
   className,
+  onClick,
 }: {
   href: string;
   currentPathName: string;
   text: string;
   className?: string;
+  onClick?: VoidFunction;
 }) {
   return (
-    <div className={className}>
+    <div className={className} onClick={onClick}>
       <Link
         href={href}
         className={`${

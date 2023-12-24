@@ -1,23 +1,40 @@
+"use client";
+
 import { faCaretDown, faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { MutableRefObject, useEffect, useRef, useState } from "react";
 import DarkModeToggle from "../DarkModeToggle";
 import NavLink from "./NavLink";
 
 export default function MobileNavBar({ className }: { className?: string }) {
   const [isMenuShowing, setMenuShowing] = useState(false);
 
+  const closeMenu = (e: MouseEvent) => {
+    if (
+      dropDownRef.current &&
+      !dropDownRef.current.contains(e.target as Node)
+    ) {
+      setMenuShowing(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", closeMenu);
+  }, []);
+
+  const dropDownRef = useRef<HTMLDivElement>(null);
+
   return (
-    <section className={` ${className}`}>
+    <section ref={dropDownRef} className={` ${className}`}>
       <div
         className={`flex ${
           isMenuShowing ? "rounded-t-3xl" : "rounded-full"
-        } gap-7 shadow-navlight dark:shadow-navdark w-fit py-3 px-7 bg-white dark:bg-black items-center`}
+        } gap-7 justify-center shadow-navlight dark:shadow-navdark py-3 px-7 bg-white dark:bg-black items-center`}
       >
         <p className="text-nowrap z-10">Raj Pulapakura</p>
         <FontAwesomeIcon
-          className="z-10"
+          className="z-10 hover:cursor-pointer"
           onClick={() => setMenuShowing(!isMenuShowing)}
           icon={isMenuShowing ? faCaretDown : faBars}
           width="20"
@@ -26,7 +43,7 @@ export default function MobileNavBar({ className }: { className?: string }) {
       </div>
       {isMenuShowing && (
         <>
-          <DropdownMenu />
+          <DropdownMenu onClick={() => setMenuShowing(false)} />
           <MobileMenuShadowBlocker />
           <MobileMenuHighlight />
         </>
@@ -47,43 +64,58 @@ function MobileMenuHighlight() {
   );
 }
 
-function DropdownMenu() {
+function DropdownMenu({
+  onClick,
+  ref,
+}: {
+  onClick?: VoidFunction;
+  ref?: MutableRefObject<null>;
+}) {
   const pathName = usePathname();
   return (
-    <div className="absolute shadow-boxlight dark:shadow-boxdark w-full rounded-b-3xl bg-white dark:bg-black py-5 px-7">
+    <div
+      ref={ref}
+      className="absolute shadow-boxlight dark:shadow-boxdark w-full rounded-b-3xl bg-white dark:bg-black py-5 px-7"
+    >
       <NavLink
         className="mb-2 text-xl"
         href="/"
         currentPathName={pathName}
         text="Home"
+        onClick={onClick}
       />
       <NavLink
         className="mb-2 text-xl"
         href="/about"
         currentPathName={pathName}
+        onClick={onClick}
         text="About"
       />
       <NavLink
         className="mb-2 text-xl"
         href="/projects"
         currentPathName={pathName}
+        onClick={onClick}
         text="Projects"
       />
       <NavLink
         className="mb-2 text-xl"
         href="/articles"
         currentPathName={pathName}
+        onClick={onClick}
         text="Articles"
       />
       <NavLink
         className="mb-2 text-xl"
         href="/resume"
+        onClick={onClick}
         currentPathName={pathName}
         text="Resume"
       />
       <NavLink
         className="text-xl"
         href="/contact"
+        onClick={onClick}
         currentPathName={pathName}
         text="Contact"
       />
