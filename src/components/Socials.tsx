@@ -4,12 +4,13 @@ import {
   faGithub,
   faLinkedin,
   faMedium,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
 export default function Socials({ className }: { className?: string }) {
   return (
-    <section className={`flex flex-row gap-10 ${className} items-center`}>
+    <section className={`flex flex-row gap-12 ${className} items-center`}>
       <SocialsIcon icon={faGithub} link={"https://github.com/raj-pulapakura"} />
       <SocialsIcon
         icon={faLinkedin}
@@ -18,6 +19,10 @@ export default function Socials({ className }: { className?: string }) {
       <SocialsIcon
         icon={faMedium}
         link={"https://medium.com/@raj.pulapakura"}
+      />
+      <SocialsIcon
+        icon={faYoutube}
+        link={"https://www.youtube.com/@rajpulapakura9119"}
       />
     </section>
   );

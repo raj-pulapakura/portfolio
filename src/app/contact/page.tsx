@@ -4,6 +4,7 @@ import {
   faGithub,
   faLinkedin,
   faMedium,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { IconDefinition, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -44,6 +45,11 @@ export default function ContactPage() {
         className="mb-2"
         text="Follow me on Medium"
         icon={faMedium}
+      />
+      <ContactLink
+        className="mb-2"
+        text="Subscribe to my YouTube channel"
+        icon={faYoutube}
       />
     </main>
   );
