@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 config.autoAddCss = false;
 
 export const metadata: Metadata = {
-  title: "Raj Pulapakura",
+  title: "Raj Pulapakura | Portfolio",
   description: "Portfolio Website",
 };
 
