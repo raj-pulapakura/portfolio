@@ -39,7 +39,7 @@ export default function Home() {
         ))}
       </section>
 
-      <h1 className="text-5xl font-black z-10 mb-10">
+      <h1 className="text-center text-5xl font-black z-10 mb-10">
         <FontAwesomeIcon icon={faFile} /> Creations
       </h1>
       <section className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-20">
@@ -52,7 +52,7 @@ export default function Home() {
         ))}
       </section>
 
-      <h1 className="text-5xl font-black z-10 mb-10">
+      <h1 className="text-center text-5xl font-black z-10 mb-10">
         <FontAwesomeIcon icon={faBook} /> Articles
       </h1>
       <section className="grid grid-cols-1 md:grid-cols-2 gap-5">
