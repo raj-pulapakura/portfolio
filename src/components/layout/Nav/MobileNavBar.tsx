@@ -89,7 +89,7 @@ function DropdownMenu({
         href="/about"
         currentPathName={pathName}
         onClick={onClick}
-        text="About"
+        text="Journey"
       />
       <NavLink
         className="mb-2 text-xl"
