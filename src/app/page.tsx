@@ -24,7 +24,7 @@ export default function Home() {
         <div className="lg:w-1/2">
           <Image
             className="rounded-lg lg:text-right lg:ml-auto"
-            src="/head.png"
+            src="pfps/head.png"
             alt="Me"
             width="400"
             height="400"

@@ -15,13 +15,13 @@ export default function TimelineMilestone({
     <div className="w-full">
       <h3 className={`text-2xl font-black text-center`}>{text}</h3>
       <p className={`text-lg text-center font-bold`}>{description}</p>
-      <div className="mx-auto w-fit mt-3 gap-3 flex">
+      <div className="mx-auto w-fit mt-3 gap-3 flex flex-wrap justify-center">
         {icons && icons.length && icons.map((icon) => icon)}
       </div>
       <div className="mt-5 mb-5">
         {miniMilestones &&
           miniMilestones.map((miniMilestone) => (
-            <p className="text-center">{miniMilestone}</p>
+            <div className="text-center">{miniMilestone}</div>
           ))}
       </div>
     </div>

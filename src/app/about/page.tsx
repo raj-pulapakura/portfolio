@@ -1,22 +1,14 @@
+"use client";
+
 import TimelineBar from "@/components/about/TimelineBar";
 import TimelineMilestone from "@/components/about/TimelineMilestone";
-import {
-  faAppStore,
-  faCss3,
-  faDocker,
-  faGooglePlay,
-  faHtml5,
-  faJs,
-  faPython,
-} from "@fortawesome/free-brands-svg-icons";
-import { faAward, faCode, faFile } from "@fortawesome/free-solid-svg-icons";
+import { faAward, faFile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
-// TODO: use better icons and get coloured icons from web and put in public and use
-// TODO: make picture smaller on full screen
-
 export default function AboutPage() {
+  const techIconWidth = 32;
+
   return (
     <main>
       <section className=" flex flex-col lg:flex-row lg:items-center lg:justify-evenly gap-10 mb-20 lg:mb-36 w-fit">
@@ -29,7 +21,7 @@ export default function AboutPage() {
         </div>
         <Image
           className="bg-blue-100 w-full lg:w-1/3 h-fit rounded-lg "
-          src="/biking.jpg"
+          src="/pfps/biking.jpg"
           alt="Me biking"
           width="400"
           height="400"
@@ -46,8 +38,12 @@ export default function AboutPage() {
         text="Jan 2021"
         description="Learned Python and programming fundamentals."
         icons={[
-          <FontAwesomeIcon icon={faPython} size="2x" />,
-          <FontAwesomeIcon icon={faCode} size="2x" />,
+          <Image
+            src="/techIcons/python-5.svg"
+            alt="python"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
         ]}
       />
 
@@ -61,8 +57,18 @@ export default function AboutPage() {
           </p>
         }
         icons={[
-          <FontAwesomeIcon icon={faGooglePlay} size="2x" />,
-          <FontAwesomeIcon icon={faAppStore} size="2x" />,
+          <Image
+            src="/techIcons/kotlinlang-icon.svg"
+            alt="kotlin"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/google_play-icon.svg"
+            alt="google play"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
         ]}
       />
 
@@ -70,13 +76,72 @@ export default function AboutPage() {
 
       <TimelineMilestone
         text="Sep 2021"
-        description="Discovered and mastered web development. Learned HTML, CSS, JavaScript,
-        TypeScript and React."
+        description="Discovered and mastered web development."
         icons={[
-          <FontAwesomeIcon icon={faHtml5} size="2x" />,
-          <FontAwesomeIcon icon={faCss3} size="2x" />,
-          <FontAwesomeIcon icon={faJs} size="2x" />,
-          <FontAwesomeIcon icon={faDocker} size="2x" />,
+          <Image
+            src="/techIcons/logo-javascript.svg"
+            alt="javascript"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/typescript.svg"
+            alt="typescript"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/w3_html5-icon.svg"
+            alt="html"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/w3_css-icon.svg"
+            alt="css"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/react-2.svg"
+            alt="react"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/docker-icon.svg"
+            alt="docker"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+
+          <Image
+            src="/techIcons/aws-logo.svg"
+            alt="aws"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+
+          <Image
+            src="/techIcons/graphql-icon.svg"
+            alt="graphql"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+
+          <Image
+            src="/techIcons/mysql-logo.svg"
+            alt="mysql"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+
+          <Image
+            src="/techIcons/mongodb-icon-1.svg"
+            alt="mysql"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
         ]}
       />
 
@@ -91,8 +156,24 @@ export default function AboutPage() {
           </p>,
         ]}
         icons={[
-          <FontAwesomeIcon icon={faGooglePlay} size="2x" />,
-          <FontAwesomeIcon icon={faAppStore} size="2x" />,
+          <Image
+            src="/techIcons/flutterio-icon.svg"
+            alt="flutter"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/firebase-1.svg"
+            alt="firebase"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/google_play-icon.svg"
+            alt="google play"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
         ]}
       />
 
@@ -107,8 +188,36 @@ export default function AboutPage() {
           <p>Learned TensorFlow and PyTorch</p>,
         ]}
         icons={[
-          <FontAwesomeIcon icon={faGooglePlay} size="2x" />,
-          <FontAwesomeIcon icon={faAppStore} size="2x" />,
+          <Image
+            src="/techIcons/tensorflow-icon.svg"
+            alt="tensorflow"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/pytorch-icon.svg"
+            alt="pytorch"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/numpy-1.svg"
+            alt="numpy"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/Pandas.svg"
+            alt="pandas"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/opencv-icon.svg"
+            alt="opencv"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
         ]}
       />
 
@@ -118,13 +227,45 @@ export default function AboutPage() {
         text="Jan 2023"
         description="Dived into Deep Learning and Computer Vision"
         miniMilestones={[
-          <p>
+          <div>
             <FontAwesomeIcon icon={faFile} /> Real-time Gesture Detection Dino
             Game
-          </p>,
-          <p>
+          </div>,
+          <div>
             <FontAwesomeIcon icon={faFile} /> Image Search Engine
-          </p>,
+          </div>,
+        ]}
+        icons={[
+          <Image
+            src="/techIcons/tensorflow-icon.svg"
+            alt="tensorflow"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/pytorch-icon.svg"
+            alt="pytorch"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/numpy-1.svg"
+            alt="numpy"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/opencv-icon.svg"
+            alt="opencv"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/react-2.svg"
+            alt="opencv"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
         ]}
       />
 
@@ -139,6 +280,20 @@ export default function AboutPage() {
           <p>Finally understood the Back Propagation algorithm</p>,
           <p>Implemented a neural network from scratch!</p>,
         ]}
+        icons={[
+          <Image
+            src="/techIcons/tensorflow-icon.svg"
+            alt="tensorflow"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/numpy-1.svg"
+            alt="numpy"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+        ]}
       />
 
       <TimelineBar />
@@ -152,6 +307,26 @@ export default function AboutPage() {
             <FontAwesomeIcon icon={faFile} /> Comment Toxicity Classifier
           </p>,
         ]}
+        icons={[
+          <Image
+            src="/techIcons/tensorflow-icon.svg"
+            alt="tensorflow"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/pytorch-icon.svg"
+            alt="pytorch"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/react-2.svg"
+            alt="react"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+        ]}
       />
 
       <TimelineBar />
@@ -160,22 +335,42 @@ export default function AboutPage() {
         text="Sep 2023"
         description="Upskilling"
         miniMilestones={[
-          <p>
+          <div>
             <FontAwesomeIcon icon={faAward} /> IBM Machine Learning Professional
             Certificate
-          </p>,
-          <p>
+          </div>,
+          <div>
             <FontAwesomeIcon icon={faAward} /> Advanced Machine Learning on
             Google Cloud Certificate
-          </p>,
-          <p>
+          </div>,
+          <div>
             <FontAwesomeIcon icon={faAward} /> Deep Learning Specialization
             Certificate
-          </p>,
-          <p>
+          </div>,
+          <div>
             <FontAwesomeIcon icon={faAward} /> Databases and SQL for Data
             Science with Python
-          </p>,
+          </div>,
+        ]}
+        icons={[
+          <Image
+            src="/techIcons/ibm.svg"
+            alt="ibm"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/google_cloud-icon.svg"
+            alt="google cloud"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
+          <Image
+            src="/techIcons/mysql-logo.svg"
+            alt="mysql"
+            width={techIconWidth}
+            height={techIconWidth}
+          />,
         ]}
       />
 
