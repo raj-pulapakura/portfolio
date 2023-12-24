@@ -1,17 +1,15 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import Nav from "@/components/layout/Nav/Nav";
-import DarkModeToggle from "@/components/layout/DarkModeToggle";
 import FixedTop from "@/components/layout/FixedTop";
 import ContentBox from "@/components/layout/ContentBox";
 
 import { config, dom } from "@fortawesome/fontawesome-svg-core";
 import Head from "next/head";
-import Footer from "@/components/layout/Footer";
-config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
+config.autoAddCss = false;
 
 export const metadata: Metadata = {
   title: "Create Next App",
