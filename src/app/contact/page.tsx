@@ -1,5 +1,4 @@
 import Email from "@/components/Email";
-import Socials from "@/components/Socials";
 import {
   faGithub,
   faLinkedin,
@@ -35,21 +34,25 @@ export default function ContactPage() {
         className="mb-2"
         text="Follow me on GitHub"
         icon={faGithub}
+        href="https://github.com/raj-pulapakura"
       />
       <ContactLink
         className="mb-2"
         text="Follow me on LinkedIn"
         icon={faLinkedin}
+        href="https://www.linkedin.com/in/rajpulapakura/"
       />
       <ContactLink
         className="mb-2"
         text="Follow me on Medium"
         icon={faMedium}
+        href="https://medium.com/@raj.pulapakura"
       />
       <ContactLink
         className="mb-2"
         text="Subscribe to my YouTube channel"
         icon={faYoutube}
+        href="https://www.youtube.com/@rajpulapakura9119"
       />
     </main>
   );
@@ -59,15 +62,20 @@ function ContactLink({
   text,
   icon,
   className,
+  href,
 }: {
   text: string;
   icon: IconDefinition;
+  href: string;
   className?: string;
 }) {
   return (
-    <div className={`flex items-center gap-3 ${className}`}>
-      <FontAwesomeIcon icon={icon} />
+    <Link
+      href={href}
+      className={`flex items-center gap-3 ${className} hover:underline hover:underline-offset-2 hover:decoration-light hover:dark:decoration-dark`}
+    >
+      <FontAwesomeIcon width={32} icon={icon} />
       <p>{text}</p>
-    </div>
+    </Link>
   );
 }
