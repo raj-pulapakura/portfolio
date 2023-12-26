@@ -28,9 +28,9 @@ const config: Config = {
       },
       boxShadow: {
         navlight: "0px 0px 20px 3px rgba(0, 0, 0, 0.08);", // dark shadow
-        navdark: "0px 0px 20px 3px rgb(255, 255, 255, 0.08);", // light shadow
+        navdark: "0px 0px 20px 3px rgb(255, 255, 255, 0.15);", // light shadow
         boxlight: "0px 0px 30px 1px rgb(0, 0, 0, 0.08)",
-        boxdark: "0px 0px 30px 1px rgb(255, 255, 255, 0.08)",
+        boxdark: "0px 0px 100px 0px rgb(255, 255, 255, 0.08)",
       },
       borderRadius: {
         timeline: "50%/100px 100px",
