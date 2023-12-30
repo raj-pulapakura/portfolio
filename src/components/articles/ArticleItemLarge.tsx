@@ -16,13 +16,13 @@ export default function ArticleItemLarge({
         className={`flex flex-col lg:flex-row items-stretch shadow-boxlight dark:shadow-boxdark rounded-lg ${className}`}
       >
         <Image
-          className="rounded-t-lg lg:rounded-none lg:rounded-l-lg w-full lg:w-1/2"
+          className="rounded-t-lg lg:rounded-none lg:rounded-l-lg w-full lg:w-1/2 h-60 lg:h-96 object-center object-none bg-white"
           src={article.thumbnailURL}
           alt="article image"
           width="1000"
           height="1000"
         />
-        <div className="p-5">
+        <div className="p-5 lg:w-1/2">
           <h1 className="text-2xl text-light dark:text-dark mb-2">
             {article.title}
           </h1>
