@@ -57,7 +57,7 @@ export default function MobileNavBar({ className }: { className?: string }) {
 
 function MobileMenuShadowBlocker() {
   return (
-    <div className="absolute w-full h-6 bg-white dark:bg-black -translate-y-5"></div>
+    <div className="absolute w-full h-6 bg-white dark:bg-black -translate-y-2"></div>
   );
 }
 
