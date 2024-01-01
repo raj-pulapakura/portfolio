@@ -14,6 +14,7 @@ export default function LargeNavBar({ className }: { className?: string }) {
         <NavLink href="/about" currentPathName={pathName} text="Journey" />
         <NavLink href="/projects" currentPathName={pathName} text="Projects" />
         <NavLink href="/articles" currentPathName={pathName} text="Articles" />
+        <NavLink href="/videos" currentPathName={pathName} text="Videos" />
         <NavLink href="/resume" currentPathName={pathName} text="Resume" />
         <NavLink href="/contact" currentPathName={pathName} text="Contact" />
         <DarkModeToggle />

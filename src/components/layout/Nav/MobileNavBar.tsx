@@ -110,6 +110,13 @@ function DropdownMenu({
       />
       <NavLink
         className="mb-2 text-xl"
+        href="/videos"
+        currentPathName={pathName}
+        onClick={onClick}
+        text="Videos"
+      />
+      <NavLink
+        className="mb-2 text-xl"
         href="/resume"
         onClick={onClick}
         currentPathName={pathName}
