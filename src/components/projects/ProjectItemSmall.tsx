@@ -13,7 +13,7 @@ export default function ProjectItemSmall({
 }) {
   return (
     <section
-      className={`items-center shadow-boxlight dark:shadow-boxdark rounded-lg px-10 py-10  ${className}`}
+      className={`items-center shadow-boxlight dark:shadow-boxdark rounded-lg p-5 lg:p-10  ${className}`}
     >
       <Image
         className="w-full h-auto rounded-md mb-5"
@@ -23,11 +23,15 @@ export default function ProjectItemSmall({
         height="1000"
       />
       <div className="w-full mb-5">
-        <h1 className="text-xl font-bold mb-1">{project.title}</h1>
-        <p className="text-md">{project.description}</p>
+        <h1 className="text-xl font-bold mb-1 text-center md:text-left">
+          {project.title}
+        </h1>
+        <p className="text-md text-center md:text-left">
+          {project.description}
+        </p>
       </div>
 
-      <div className="flex gap-5">
+      <div className="flex gap-5 w-fit mx-auto md:m-0">
         {project.githubURL && (
           <ProjectLink
             className="fa-xl"

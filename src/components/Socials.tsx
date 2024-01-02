@@ -10,7 +10,9 @@ import Link from "next/link";
 
 export default function Socials({ className }: { className?: string }) {
   return (
-    <section className={`flex flex-row gap-12 ${className} items-center`}>
+    <section
+      className={`flex flex-row flex-wrap gap-5 ${className} items-center`}
+    >
       <SocialsIcon icon={faGithub} link={"https://github.com/raj-pulapakura"} />
       <SocialsIcon
         icon={faLinkedin}

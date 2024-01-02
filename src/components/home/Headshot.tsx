@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 
-export default function Headshot() {
+export default function Headshot({ className }: { className: string }) {
   return (
-    <div className="lg:w-1/2 animate-fadeIn">
+    <div className={`animate-fadeIn ${className}`}>
       <Image
-        className="rounded-lg lg:text-right lg:ml-auto"
+        className="rounded-lg"
         src="/pfps/head.png"
         alt="Me"
         width="400"

@@ -10,10 +10,10 @@ export default function ArticleItemsSmall({
 }) {
   return (
     <section
-      className={`flex flex-row shadow-boxlight dark:shadow-boxdark rounded-lg px-10 py-10 ${className}`}
+      className={`flex flex-row shadow-boxlight dark:shadow-boxdark rounded-lg p-5 lg:p-10 ${className}`}
     >
       <Link href={article.articleURL}>
-        <h1 className="text-2xl text-light dark:text-dark mb-2">
+        <h1 className="text-lg md:text-xl lg:text-2xl font-bold text-light dark:text-dark mb-2">
           {article.title}
         </h1>
         <p className="text-gray-400 mb-5">{article.datePublished}</p>
