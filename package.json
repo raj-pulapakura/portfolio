@@ -13,7 +13,6 @@
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "googleapis": "^129.0.0",
     "next": "14.0.4",
     "react": "^18",
     "react-chrono": "^2.3.1",
