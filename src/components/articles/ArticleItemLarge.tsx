@@ -23,14 +23,14 @@ export default function ArticleItemLarge({
           height="1000"
         />
         <div className="p-5 lg:w-1/2">
-          <h1 className="text-2xl text-light dark:text-dark mb-2">
+          <h1 className="text-lg md:text-xl lg:text-2xl font-bold text-light dark:text-dark mb-2">
             {article.title}
           </h1>
           <p className="text-gray-400 mb-5">{article.datePublished}</p>
           <p className="mb-5">{article.subtitle}</p>
           <div>
             {article.tags.map((tag) => (
-              <Chip className="text-sm" secondary={true}>
+              <Chip className="text-xs md:text-sm" secondary={true}>
                 {tag}
               </Chip>
             ))}

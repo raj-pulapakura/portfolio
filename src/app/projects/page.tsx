@@ -7,8 +7,8 @@ import Link from "next/link";
 export default function ProjectsPage() {
   return (
     <main>
-      <h1 className="text-4xl font-black mb-10 text-center">
-        I express my love for software development through the{" "}
+      <h1 className="text-3xl md:text-4xl font-black mb-10 text-center">
+        I express my love for coding through the{" "}
         <span className="text-light dark:text-dark"> projects</span> I build.
       </h1>
       <h2 className="text-lg font-bold mb-10 text-center">

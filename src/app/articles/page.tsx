@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function ArticlesPage() {
   return (
     <main>
-      <h1 className="text-4xl font-black mb-10 text-center">
+      <h1 className="text-3xl md:text-4xl font-black mb-10 text-center">
         <Link href="https://medium.com/@raj.pulapakura">
           <span className="underline underline-offset-4 decoration-light dark:decoration-dark">
             Follow me on Medium
