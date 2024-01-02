@@ -8,7 +8,7 @@ export default async function VideosPage() {
 
   return (
     <main>
-      <h1 className="text-4xl font-black mb-10 text-center">
+      <h1 className="text-3xl md:text-4xl font-black mb-10 text-center">
         I post{" "}
         <Link href="https://www.youtube.com/@rajpulapakura9119">
           <span className="underline underline-offset-4 decoration-light dark:decoration-dark">

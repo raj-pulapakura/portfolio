@@ -1,5 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import resolveConfig from "tailwindcss/resolveConfig";
+import tailwindConfig from "../../../tailwind.config";
+
+const fullConfig = resolveConfig(tailwindConfig);
 
 export default function VideoItemLarge({
   snippet,
@@ -20,17 +26,17 @@ export default function VideoItemLarge({
       <section className="shadow-boxlight dark:shadow-boxdark rounded-lg h-full">
         {snippet.thumbnails && (
           <Image
-            className="rounded-t-lg"
+            className="rounded-t-lg w-full"
             alt="video thumbnail"
-            src={snippet.thumbnails.maxres?.url || ""}
-            width={snippet.thumbnails.maxres?.width || 0}
-            height={snippet.thumbnails.maxres?.height || 0}
+            src={snippet.thumbnails.maxres?.url}
+            width={snippet.thumbnails.maxres?.width}
+            height={snippet.thumbnails.maxres?.height}
           />
         )}
         <div className="p-7">
           <h1 className="text-2xl font-bold mb-2">{snippet?.title}</h1>
           <h1 className="mb-5 text-gray-800 dark:text-gray-300">{date}</h1>
-          <h1 className="text-gray-800 dark:text-gray-300">
+          <h1 className="text-gray-800 dark:text-gray-300 overflow-hidden">
             {snippet.description!.slice(0, 200) + "..."}
           </h1>
         </div>

@@ -3,6 +3,7 @@
 import Email from "@/components/Email";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect } from "react";
 import useDownloader from "react-use-downloader";
 
 export default function ResumePage() {
