@@ -3,7 +3,6 @@
 import Email from "@/components/Email";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect } from "react";
 import useDownloader from "react-use-downloader";
 
 export default function ResumePage() {
@@ -25,7 +24,7 @@ export default function ResumePage() {
         opportunities.
       </p>
       <button
-        className="hover:bg-gray-100 active:bg-gray-400 text-lg text-white dark:text-black bg-light dark:bg-dark font-bold  px-5 py-3 rounded-lg mb-20 "
+        className="hover:bg-gray-100 active:bg-gray-400 text-lg text-white dark:text-black bg-light dark:bg-dark font-bold  px-5 py-3 rounded-lg mb-2 "
         onClick={() => download(fileUrl, filename)}
       >
         <FontAwesomeIcon className="mr-3" icon={faDownload} size="lg" />
