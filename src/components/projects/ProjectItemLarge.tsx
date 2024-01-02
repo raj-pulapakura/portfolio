@@ -14,7 +14,7 @@ export default function ProjectItemLarge({
 }) {
   return (
     <section
-      className={`items-center shadow-boxlight dark:shadow-boxdark rounded-lg px-10 py-10  ${className}`}
+      className={`items-center shadow-boxlight dark:shadow-boxdark rounded-lg p-5 lg:p-10 ${className}`}
     >
       <Image
         className="w-full h-auto rounded-md mb-5"
@@ -50,7 +50,7 @@ export default function ProjectItemLarge({
 
       <div>
         {project.technologiesUsed.map((tech) => (
-          <Chip className="text-sm" secondary={true}>
+          <Chip className="text-xs md:text-sm" secondary={true}>
             {tech}
           </Chip>
         ))}
