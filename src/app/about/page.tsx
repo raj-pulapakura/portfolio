@@ -11,16 +11,20 @@ export default function AboutPage() {
 
   return (
     <main>
-      <section className=" flex flex-col lg:flex-row lg:items-center lg:justify-evenly gap-10 mb-20 lg:mb-36 w-fit">
+      <section className=" flex flex-col lg:flex-row lg:items-center lg:justify-evenly gap-10 mb-10 lg:mb-36 mx-auto">
         <div className=" ">
-          <h1 className="text-6xl mb-5">👋👋👋</h1>
-          <h1 className="text-6xl font-black mb-3">Hi, I'm Raj.</h1>
-          <h2 className="text-3xl font-black">
+          <h1 className="text-5xl lg:text-6xl text-center lg:text-left mb-5">
+            👋👋👋
+          </h1>
+          <h1 className="text-5xl lg:text-6xl text-center lg:text-left font-black mb-3">
+            Hi, I'm Raj.
+          </h1>
+          <h2 className="text-3xl text-center lg:text-left font-black">
             I live in Melbourne, Australia.
           </h2>
         </div>
         <Image
-          className="bg-blue-100 w-full lg:w-1/3 h-fit rounded-lg "
+          className="bg-blue-100 w-full lg:w-2/5 h-fit rounded-lg "
           src="/pfps/biking.jpg"
           alt="Me biking"
           width="400"
@@ -28,7 +32,7 @@ export default function AboutPage() {
         />
       </section>
 
-      <h1 className="text-6xl font-black text-center">
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-center">
         My dev journey started in the beginning of 2021...
       </h1>
 
