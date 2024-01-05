@@ -11,7 +11,7 @@ import Link from "next/link";
 export default function Socials({ className }: { className?: string }) {
   return (
     <section
-      className={`flex flex-row flex-wrap gap-5 ${className} items-center`}
+      className={`flex flex-row flex-wrap gap-7 ${className} items-center`}
     >
       <SocialsIcon icon={faGithub} link={"https://github.com/raj-pulapakura"} />
       <SocialsIcon

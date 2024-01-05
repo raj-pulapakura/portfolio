@@ -9,7 +9,7 @@ export default function FixedTop({
 }) {
   return (
     <section
-      className={`fixed top-10 z-100 left-1/2 -translate-x-1/2 ${className}`}
+      className={`fixed top-10 z-50 left-1/2 -translate-x-1/2 ${className}`}
     >
       {children}
     </section>

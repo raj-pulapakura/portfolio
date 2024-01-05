@@ -3,6 +3,7 @@ import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import ProjectLink from "./ProjectLink";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export default function ProjectItemSmall({
   project,
@@ -12,8 +13,10 @@ export default function ProjectItemSmall({
   className?: string;
 }) {
   return (
-    <section
-      className={`items-center shadow-boxlight dark:shadow-boxdark rounded-lg p-5 lg:p-10  ${className}`}
+    <AnimationOnScroll
+      animateOnce={true}
+      animateIn="animate__fadeIn"
+      className={`items-stretch shadow-boxlight dark:shadow-boxdark rounded-lg p-5 lg:p-10  ${className}`}
     >
       <Image
         className="w-full h-auto rounded-md mb-5"
@@ -50,6 +53,6 @@ export default function ProjectItemSmall({
           />
         )}
       </div>
-    </section>
+    </AnimationOnScroll>
   );
 }

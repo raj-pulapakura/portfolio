@@ -1,5 +1,6 @@
 import { Article } from "@/data/articles";
 import Link from "next/link";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export default function ArticleItemsSmall({
   article,
@@ -9,7 +10,10 @@ export default function ArticleItemsSmall({
   className?: string;
 }) {
   return (
-    <section
+    <AnimationOnScroll
+      animateOnce={true}
+      animateIn="animate__fadeIn"
+      animatePreScroll={true}
       className={`flex flex-row shadow-boxlight dark:shadow-boxdark rounded-lg p-5 lg:p-10 ${className}`}
     >
       <Link href={article.articleURL}>
@@ -19,6 +23,6 @@ export default function ArticleItemsSmall({
         <p className="text-gray-400 mb-5">{article.datePublished}</p>
         <p>{article.subtitle}</p>
       </Link>
-    </section>
+    </AnimationOnScroll>
   );
 }

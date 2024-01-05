@@ -10,7 +10,7 @@ export default function Chip({
   className?: string;
 }) {
   const commonClasses =
-    "py-1 px-3 rounded-full w-fit inline-block mr-2 mb-2 font-semibold";
+    "inline-block py-1 px-3 rounded-full w-fit mr-2 mb-2 font-semibold";
 
   return secondary ? (
     <div
