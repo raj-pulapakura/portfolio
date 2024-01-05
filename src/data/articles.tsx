@@ -36,6 +36,19 @@ export class Article {
 
 export default [
   new Article({
+    title: "2 Design Decisions that can Make or Break your ML System",
+    subtitle:
+      "How Static and Dynamic training/serving determines whether your production model will stand the test of time",
+    articleURL:
+      "https://medium.com/@raj.pulapakura/2-design-decisions-that-can-make-or-break-your-ml-system-14fbb22be512",
+    thumbnailURL:
+      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*TcD_7Td8F5_CURXzkSGPZw.png",
+    tags: ["Machine Learning", "Data", "Production", "MlOps", "Data Science"],
+    firstPara:
+      "In the last article, we discussed the components of a production-grade ML Pipeline. While having a robust ML pipeline is a major step in the direction of success, it’s equally important to know how and when to use this pipeline, to avoid common issues like model staleness.",
+    datePublished: "Jan 5, 2024",
+  }),
+  new Article({
     title: "Data to Deployment: Crafting a Robust Machine Learning Pipeline",
     subtitle:
       "A journey through the inner workings of production-grade machine learning pipelines",
@@ -45,7 +58,7 @@ export default [
       "https://miro.medium.com/v2/resize:fit:828/format:webp/1*02zaF-jTPIR2Lhe7axbGkg.png",
     tags: ["Machine Learning", "Data", "Production"],
     firstPara: "Ever wondered how machine learning systems work in production?",
-    datePublished: "Dec 30 2023",
+    datePublished: "Dec 30, 2023",
   }),
   new Article({
     title: "3 Reasons You Should Contribute to Open Source",
@@ -63,7 +76,7 @@ export default [
     ],
     firstPara:
       "The term open source refers to something people can modify and share because its design is publicly accessible. (https://opensource.com/resources/what-open-source)",
-    datePublished: "Dec 23 2023",
+    datePublished: "Dec 23, 2023",
   }),
   new Article({
     title: "Beginner's Guide to the Maths behind Machine Learning",
@@ -76,6 +89,6 @@ export default [
     tags: ["Machine Learning", "Maths", "Beginner"],
     firstPara:
       "I used to think that you didn’t need maths to get into machine learning. For a highschool student who was fascinated by ML, learning more maths was the least of my concerns.",
-    datePublished: "Dec 15 2023",
+    datePublished: "Dec 15, 2023",
   }),
 ];
