@@ -52,7 +52,7 @@ export default [
     ],
     firstPara:
       "Unless you’ve been living under a rock, you’ve probably heard of vector databases. The sheer speed of innovation in the AI world can make it hard to keep up with the latest buzzwords and technologies, such as embeddings, vectors, and vector databases. That’s why I’ve written this article, to bring you up to speed with these concepts in a beginner-friendly way.",
-    datePublished: "Jan 5, 2024",
+    datePublished: "Jan 10, 2024",
   }),
   new Article({
     title: "2 Design Decisions that can Make or Break your ML System",
