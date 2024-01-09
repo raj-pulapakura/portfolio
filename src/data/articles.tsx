@@ -36,6 +36,25 @@ export class Article {
 
 export default [
   new Article({
+    title: "Vector Databases: A Beginner's Guide",
+    subtitle:
+      "A no-nonsense introduction to vector databases and embeddings, plus a code example with Chroma",
+    articleURL:
+      "https://medium.com/@raj.pulapakura/vector-databases-a-beginners-guide-723ce809f52b",
+    thumbnailURL:
+      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*79vBtz3D0rHPjOQdD7kKUQ.png",
+    tags: [
+      "LLMs",
+      "Machine Learning",
+      "Vector databases",
+      "AI",
+      "Deep Learning",
+    ],
+    firstPara:
+      "Unless you’ve been living under a rock, you’ve probably heard of vector databases. The sheer speed of innovation in the AI world can make it hard to keep up with the latest buzzwords and technologies, such as embeddings, vectors, and vector databases. That’s why I’ve written this article, to bring you up to speed with these concepts in a beginner-friendly way.",
+    datePublished: "Jan 5, 2024",
+  }),
+  new Article({
     title: "2 Design Decisions that can Make or Break your ML System",
     subtitle:
       "How Static and Dynamic training/serving determines whether your production model will stand the test of time",
