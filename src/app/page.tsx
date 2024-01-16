@@ -14,7 +14,7 @@ export default function Home() {
     <main>
       <section className="flex flex-col-reverse items-center lg:flex-row gap-10 lg:justify-between mb-20 lg:mb-40">
         <div className="lg:w-1/2">
-          <p className="mb-5 uppercase tracking-widest text-gray-300 text-center lg:text-left">
+          <p className="mb-5 uppercase tracking-widest text-gray-800 dark:text-gray-300 text-center lg:text-left">
             Raj Pulapakura
           </p>
           <h1 className="text-3xl text-center font-black mb-10 md:text-4xl lg:text-5xl lg:text-left">
