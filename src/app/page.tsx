@@ -18,7 +18,7 @@ export default function Home() {
             Raj Pulapakura
           </p>
           <h1 className="text-3xl text-center font-black mb-10 md:text-4xl lg:text-5xl lg:text-left">
-            Full-stack web and mobile developer, and Machine learning engineer.
+            Machine learning and Full Stack engineer.
           </h1>
           <Socials className="w-fit mx-auto lg:w-full lg:m-0" />
         </div>
