@@ -36,6 +36,19 @@ export class Article {
 
 export default [
   new Article({
+    title: "Fine-tune Your Own BERT Token Classification Model",
+    subtitle:
+      "Use Hugging Face and TensorFlow to build a model that identifies molecular biology terms!",
+    articleURL:
+      "https://medium.com/@raj.pulapakura/fine-tune-your-own-bert-token-classification-model-06b1153fbf56",
+    thumbnailURL:
+      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*xnJvPuQyk0QZ0EAAhxnMRQ.png",
+    tags: ["Hugging Face", "Bert", "Fine Tuning", "LLM", "NLP"],
+    firstPara:
+      "Over the last week I’ve been diving to the Hugging Face NLP libraries. It’s been a fun adventure, and I want to give back to the HF community with a tutorial on token classification for molecular biology (this is also for my learning!)",
+    datePublished: "Jan 20, 2024",
+  }),
+  new Article({
     title: "Vector Databases: A Beginner's Guide",
     subtitle:
       "A no-nonsense introduction to vector databases and embeddings, plus a code example with Chroma",
