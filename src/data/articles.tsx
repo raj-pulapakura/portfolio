@@ -41,7 +41,7 @@ export default [
     articleURL:
       "https://medium.com/@raj.pulapakura/the-ultimate-saas-tech-web-stack-for-developing-paid-products-1eb9f4c4bec6",
     thumbnailURL:
-      "https://miro.medium.com/v2/resize:fit:1100/format:webp/0*Ky8-79LNv_XP6gDU",
+      "https://images.unsplash.com/photo-1626427223333-183395267453?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     tags: [
       "Web Development",
       "Software Engineering",

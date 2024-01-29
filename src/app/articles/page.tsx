@@ -11,9 +11,13 @@ export default function ArticlesPage() {
             Follow me on Medium
           </span>
         </Link>
-        , where I write{" "}
-        <span className="text-light dark:text-dark"> technical articles</span>,
-        sharing my thoughts on software development and AI.
+        , where I write articles on{" "}
+        <span className="text-light dark:text-dark"> machine learning</span> and
+        <span className="text-light dark:text-dark">
+          {" "}
+          full-stack development
+        </span>
+        .
       </h1>
       <div className="grid grid-cols-1 gap-5">
         {articles.map((article) => (
