@@ -36,6 +36,25 @@ export class Article {
 
 export default [
   new Article({
+    title: "The Ultimate SaaS Tech Web Stack For Developing Paid Products",
+    subtitle: "The Tech Stack for Peak Developer Experience",
+    articleURL:
+      "https://medium.com/@raj.pulapakura/the-ultimate-saas-tech-web-stack-for-developing-paid-products-1eb9f4c4bec6",
+    thumbnailURL:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/0*Ky8-79LNv_XP6gDU",
+    tags: [
+      "Web Development",
+      "Software Engineering",
+      "SaaS",
+      "Firebase",
+      "Vercel",
+      "Stripe",
+    ],
+    firstPara:
+      "If you crave a frictionless developer experience and love using modern developer tools, then the Next.js/TypeScript/Firebase/Stripe/Vercel stack is a no-brainer.",
+    datePublished: "Jan 29, 2024",
+  }),
+  new Article({
     title: "Fine-tune Your Own BERT Token Classification Model",
     subtitle:
       "Use Hugging Face and TensorFlow to build a model that identifies molecular biology terms!",
