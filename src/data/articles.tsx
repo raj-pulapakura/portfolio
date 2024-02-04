@@ -36,6 +36,24 @@ export class Article {
 
 export default [
   new Article({
+    title: "Image Segmentation — A Beginner's Guide",
+    subtitle:
+      "The essentials of Image Segmentation + implementation in TensorFlow",
+    articleURL:
+      "https://medium.com/@raj.pulapakura/image-segmentation-a-beginners-guide-0ede91052db7",
+    thumbnailURL:
+      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*Jvrhdz0GlwCrsY5njOB_Tg.gif",
+    tags: [
+      "Image Segmentation",
+      "Computer Vision",
+      "Machine Learning",
+      "Deep Learning",
+    ],
+    firstPara:
+      "Image segmentation is a computer vision technique that assigns a label to every pixel in an image such that pixels with the same label share certain characteristics.",
+    datePublished: "Feb 5, 2024",
+  }),
+  new Article({
     title: "The Ultimate SaaS Tech Web Stack For Developing Paid Products",
     subtitle: "The Tech Stack for Peak Developer Experience",
     articleURL:
