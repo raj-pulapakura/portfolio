@@ -36,6 +36,18 @@ export class Article {
 
 export default [
   new Article({
+    title: "What Will AI Look Like in 2145?",
+    subtitle: "Bringing Elysium’s “Med-Bay” to Life",
+    articleURL:
+      "https://medium.com/@raj.pulapakura/what-will-ai-look-like-in-2145-bcabdae0e407",
+    thumbnailURL:
+      "https://miro.medium.com/v2/resize:fit:828/format:webp/0*y3Z07N_iEZZgt3Hb",
+    tags: ["AI", "Future", "Humanity", "Utopia", "Medical Devices"],
+    firstPara:
+      "For a few minutes, I invite you to pause and relax. This article is intended to be a cool breeze of fresh air, a glimpse into what AI might look like in the future.",
+    datePublished: "Feb 13, 2024",
+  }),
+  new Article({
     title: "Image Segmentation — A Beginner's Guide",
     subtitle:
       "The essentials of Image Segmentation + implementation in TensorFlow",
