@@ -9,8 +9,8 @@ export default function ResumePage() {
   const { size, elapsed, percentage, download, cancel, error, isInProgress } =
     useDownloader();
 
-  const fileUrl = "/Raj Pulapakura - Resume.pdf";
-  const filename = "Raj Pulapakura - Resume.pdf";
+  const fileUrl = "/resume.pdf";
+  const filename = "resume.pdf";
 
   return (
     <main className="">
