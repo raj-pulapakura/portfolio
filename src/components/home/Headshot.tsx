@@ -7,7 +7,7 @@ export default function Headshot({ className }: { className: string }) {
     <div className={`animate-fadeIn ${className}`}>
       <Image
         className="ml-auto rounded-lg"
-        src="/pfps/head.png"
+        src="/pfps/head.jpg"
         alt="Me"
         width="400"
         height="400"
