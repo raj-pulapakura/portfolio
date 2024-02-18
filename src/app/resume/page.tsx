@@ -1,16 +1,11 @@
 "use client";
 
 import Email from "@/components/Email";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import useDownloader from "react-use-downloader";
+import DownloadButton from "./DownloadButton";
+import { useDownloadPdf } from "@/hooks/useDownloadPdf";
 
 export default function ResumePage() {
-  const { size, elapsed, percentage, download, cancel, error, isInProgress } =
-    useDownloader();
-
-  const fileUrl = "/resume.pdf";
-  const filename = "resume.pdf";
+  const downloadPdf = useDownloadPdf();
 
   return (
     <main className="">
@@ -23,13 +18,28 @@ export default function ResumePage() {
         using the button below, and email me at <Email /> to discuss further any
         opportunities.
       </p>
-      <button
-        className="hover:bg-gray-100 active:bg-gray-400 text-lg text-white dark:text-black bg-light dark:bg-dark font-bold  px-5 py-3 rounded-lg mb-2 "
-        onClick={() => download(fileUrl, filename)}
-      >
-        <FontAwesomeIcon className="mr-3" icon={faDownload} size="lg" />
-        Download my resume
-      </button>
+      <div className="flex gap-5">
+        <DownloadButton
+          onClick={() =>
+            downloadPdf(
+              "/resumes/Raj Pulapakura - Resume - Machine Learning Engineer.pdf",
+              "Raj Pulapakura - Resume - Machine Learning Engineer.pdf"
+            )
+          }
+        >
+          Machine Learning Engineer Resume
+        </DownloadButton>
+        <DownloadButton
+          onClick={() =>
+            downloadPdf(
+              "/resumes/Raj Pulapakura - Resume - Full Stack Engineer.pdf",
+              "Raj Pulapakura - Resume - Full Stack Engineer.pdf"
+            )
+          }
+        >
+          Full Stack Engineer Resume
+        </DownloadButton>
+      </div>
     </main>
   );
 }
