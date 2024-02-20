@@ -36,6 +36,23 @@ export class Article {
 
 export default [
   new Article({
+    title: "Multimodal Models and Fusion - A Complete Guide",
+    subtitle:
+      "Everything you need to know to get started with multimodal models and multimodal fusion!",
+    articleURL: "https://medium.com/@raj.pulapakura/225ca91f6861",
+    thumbnailURL: "https://medium.com/@raj.pulapakura/225ca91f6861",
+    tags: [
+      "Multimodal AI",
+      "Computer Vision",
+      "Machine Learning",
+      "Deep Learning",
+      "Vector Embeddings",
+    ],
+    firstPara:
+      "Personally, I learn better when I intake information from multiple sources about a particular subject. For example, if I wanted to learn about the Transformer architecture, here are some of the different sources I would use:",
+    datePublished: "Feb 20, 2024",
+  }),
+  new Article({
     title: "What Will AI Look Like in 2145?",
     subtitle: "Bringing Elysium’s “Med-Bay” to Life",
     articleURL:
