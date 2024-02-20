@@ -40,7 +40,8 @@ export default [
     subtitle:
       "Everything you need to know to get started with multimodal models and multimodal fusion!",
     articleURL: "https://medium.com/@raj.pulapakura/225ca91f6861",
-    thumbnailURL: "https://medium.com/@raj.pulapakura/225ca91f6861",
+    thumbnailURL:
+      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*Ag1eUL0hAjGUWnDeQeMhiw.png",
     tags: [
       "Multimodal AI",
       "Computer Vision",
