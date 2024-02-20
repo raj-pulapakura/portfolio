@@ -22,8 +22,8 @@ export default function ResumePage() {
         <DownloadButton
           onClick={() =>
             downloadPdf(
-              "/resumes/Raj Pulapakura - Resume - Machine Learning Engineer.pdf",
-              "Raj Pulapakura - Resume - Machine Learning Engineer.pdf"
+              "/resumes/Raj Pulapakura - Machine Learning Engineer Resume.pdf",
+              "Raj Pulapakura - Machine Learning Engineer Resume.pdf"
             )
           }
         >
@@ -32,8 +32,8 @@ export default function ResumePage() {
         <DownloadButton
           onClick={() =>
             downloadPdf(
-              "/resumes/Raj Pulapakura - Resume - Full Stack Engineer.pdf",
-              "Raj Pulapakura - Resume - Full Stack Engineer.pdf"
+              "/resumes/Raj Pulapakura - Full Stack Software Engineer Resume.pdf",
+              "Raj Pulapakura - Resume - Full Stack Software Engineer Resume.pdf"
             )
           }
         >
