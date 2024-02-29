@@ -36,6 +36,24 @@ export class Article {
 
 export default [
   new Article({
+    title: "3 Lessons from My SWE Internship at a Startup",
+    subtitle:
+      "One month ago, I could have never anticipated the enormous growth I would experience as a software engineer, communicator, and problem-solver. These insights will be instrumental in my future corporate and personal ventures.",
+    articleURL: "https://medium.com/@raj.pulapakura/1896ad469555",
+    thumbnailURL:
+      "https://miro.medium.com/v2/resize:fit:828/format:webp/0*1ZwBPj1uMjXhbQ63",
+    tags: [
+      "Software Engineering",
+      "Milestone",
+      "Internship",
+      "Startup",
+      "Lessons In Life",
+    ],
+    firstPara:
+      "👋 Hey there! I’m Raj, a 16-year-old software engineer who’s just concluded my 1.5-month internship at a tech startup in Melbourne. Although the journey was short and sweet, I’ve learned so much and the lessons I’ve garnered will continue to shape my future endeavours for years to come.",
+    datePublished: "Mar 01, 2024",
+  }),
+  new Article({
     title: "Multimodal Models and Fusion - A Complete Guide",
     subtitle:
       "Everything you need to know to get started with multimodal models and multimodal fusion!",
